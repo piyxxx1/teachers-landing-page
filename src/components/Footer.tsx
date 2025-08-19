@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Facebook, Linkedin, Instagram, Heart } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, Heart } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,17 +18,36 @@ const Footer = () => {
             <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
             
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">Address</h3>
-                  <p className="text-secondary-foreground/80 leading-relaxed">
-                    Behind Jagtap Patil Petrol Pump,<br />
-                    Opposite Military Ground,<br />
-                    Pune 411061
-                  </p>
-                </div>
-              </div>
+                             <div className="flex items-start space-x-4">
+                 <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                 <div>
+                   <h3 className="font-semibold mb-1">Address</h3>
+                   <a 
+                     href="https://maps.app.goo.gl/f1jQRZxwHU5iQMkS7" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="text-secondary-foreground/80 hover:text-primary transition-colors leading-relaxed"
+                   >
+                     Behind Jagtap Patil Petrol Pump,<br />
+                     Opposite Military Ground,<br />
+                     Pune 411061
+                   </a>
+                 </div>
+               </div>
+               
+               {/* Google Maps Embed */}
+               <div className="mt-4">
+                 <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2657891234567!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjQiTiA3M8KwNTEnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                   width="100%"
+                   height="200"
+                   style={{ border: 0 }}
+                   allowFullScreen
+                   loading="lazy"
+                   referrerPolicy="no-referrer-when-downgrade"
+                   className="rounded-lg"
+                 ></iframe>
+               </div>
 
               <div className="flex items-center space-x-4">
                 <Phone className="w-6 h-6 text-primary" />
@@ -51,17 +70,19 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Social Media */}
-            <div className="mt-8">
-              <h3 className="font-semibold mb-4">Follow Us</h3>
-              <div className="flex space-x-4">
-                <div className="p-1 rounded-full" style={{ backgroundColor: '#ffe4c4' }}>
-                  <Button variant="ghost" size="icon" className="text-black hover:text-black hover:bg-transparent focus:bg-transparent active:bg-transparent">
-                    <Linkedin className="w-2 h-2" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+                         {/* Social Media */}
+             <div className="mt-8">
+               <h3 className="font-semibold mb-4">Follow Us</h3>
+               <div className="flex space-x-4">
+                 <div className="p-1 rounded-full" style={{ backgroundColor: '#ffe4c4' }}>
+                   <a href="https://www.youtube.com/@justlegaltalk" target="_blank" rel="noopener noreferrer">
+                     <Button variant="ghost" size="icon" className="text-black hover:text-black hover:bg-transparent focus:bg-transparent active:bg-transparent">
+                       <Youtube className="w-2 h-2" />
+                     </Button>
+                   </a>
+                 </div>
+               </div>
+             </div>
           </div>
 
           {/* Quick Links & Contact Form */}
@@ -102,7 +123,7 @@ const Footer = () => {
 
               <div className="bg-accent p-6 rounded-lg border-0">
                 <h4 className="font-semibold text-accent-foreground mb-3">Ready to Start?</h4>
-                <p className="text-sm text-accent-foreground/80 mb-4">
+                <p className="text-sm text-accent-foreground/80 mb-4 font-bold">
                   Begin your legal journey today—transform ambition into action.
                 </p>
                 <Button 
@@ -133,7 +154,7 @@ const Footer = () => {
                 © 2024 JLT Academy. All rights reserved.
               </p>
               <p className="text-secondary-foreground/60 text-sm">
-                Empowering Legal Minds Since 2009
+                Empowering Legal Minds
               </p>
             </div>
           </div>

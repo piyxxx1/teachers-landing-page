@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen, Users, Award, Video } from "lucide-react";
+import { BookOpen, Users, Award, Video, Phone } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -52,6 +52,13 @@ const Hero = () => {
           >
             Contact
           </button>
+          <a 
+            href="tel:+917248926070"
+            className="nav-link flex items-center space-x-2 bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-2 rounded-lg transition-all duration-300"
+          >
+            <Phone className="w-4 h-4" />
+            <span className="hidden md:block">+91 724 892 6070</span>
+          </a>
         </div>
       </nav>
 

@@ -33,7 +33,7 @@ const About = () => {
     },
     {
       icon: BookOpen,
-      title: "Judicial Training",
+      title: "Practical Training",
       description: "Judgment writing and legal reasoning development"
     },
     {
@@ -48,8 +48,8 @@ const About = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="gradient-gold bg-clip-text text-transparent">JLT Academy</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black leading-tight">
+              About JLT Academy
             </h2>
             
                                       <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -115,16 +115,16 @@ const About = () => {
                       <Label htmlFor="law-student">Law Student</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="judiciary-aspirant" id="judiciary-aspirant" />
-                      <Label htmlFor="judiciary-aspirant">Judiciary Aspirant</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
                       <RadioGroupItem value="law-graduate" id="law-graduate" />
                       <Label htmlFor="law-graduate">Law Graduate</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="practicing-advocate" id="practicing-advocate" />
                       <Label htmlFor="practicing-advocate">Practicing Advocate</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="judiciary-aspirant" id="judiciary-aspirant" />
+                      <Label htmlFor="judiciary-aspirant">Judiciary Aspirant</Label>
                     </div>
                   </RadioGroup>
                 </div>

@@ -5,22 +5,13 @@ import { BookOpen, Scale, FileText, Users } from "lucide-react";
 const courses = [
   {
     id: 1,
-    title: "All India Bar Examination (AIBE)",
-    description: "Comprehensive preparation for AIBE with expert guidance, practice papers, and strategic study plans.",
-    icon: Scale,
-    duration: "3 Months",
-    level: "Professional"
-  },
-  {
-    id: 2,
     title: "Legal Drafting",
     description: "Master the art of legal document preparation, contracts, and professional legal writing.",
     icon: FileText,
-    duration: "2 Months",
-    level: "Intermediate"
+    duration: "2 Months"
   },
   {
-    id: 3,
+    id: 2,
     title: "Judgement Writing",
     description: "Develop skills in judicial decision writing, legal reasoning, and case analysis.",
     icon: BookOpen,
@@ -28,7 +19,7 @@ const courses = [
     level: "Advanced"
   },
   {
-    id: 4,
+    id: 3,
     title: "Combo Masterclass",
     description: "Complete coverage of Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA).",
     icon: Users,
@@ -47,7 +38,7 @@ const Courses = () => {
             Our Live Interactive Masterclass
           </h2>
           <p className="text-xl text-center max-w-4xl mx-auto leading-relaxed">
-            Strengthen your legal foundation and prepare for competitive exams with expert-led live sessions. From preparation to profession—step into your legal journey today
+            Strengthen your legal foundation and prepare for competitive exams with expert-led live sessions. <span className="text-amber-900">From preparation to profession—step into your legal journey</span>
           </p>
         </div>
 

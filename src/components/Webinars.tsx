@@ -7,38 +7,22 @@ const webinars = [
     id: 1,
     title: "New Criminal Laws 2024: Complete Overview",
     date: "March 25, 2024",
-    time: "6:00 PM IST",
-    duration: "2 hours",
     attendees: "150+",
     description: "Comprehensive analysis of the new Bharatiya Nyaya Sanhita and its implications for legal practice.",
     status: "upcoming"
   },
   {
     id: 2,
-    title: "AIBE Success Strategies",
-    date: "March 20, 2024",
-    time: "7:00 PM IST",
-    duration: "1.5 hours",
-    attendees: "200+",
-    description: "Expert tips and preparation strategies for cracking the All India Bar Examination.",
-    status: "completed"
-  },
-  {
-    id: 3,
     title: "Legal Drafting Masterclass",
     date: "March 30, 2024",
-    time: "5:30 PM IST",
-    duration: "2.5 hours",
     attendees: "100+",
     description: "Advanced techniques in legal document drafting with practical examples and templates.",
     status: "upcoming"
   },
   {
-    id: 4,
+    id: 3,
     title: "Constitutional Law Updates",
     date: "April 5, 2024",
-    time: "6:30 PM IST",
-    duration: "2 hours",
     attendees: "180+",
     description: "Recent developments in constitutional law and landmark judgments analysis.",
     status: "upcoming"
@@ -50,8 +34,8 @@ const Webinars = () => {
     <section id="webinars" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Live <span style={{ color: '#8B4513' }}>Webinars</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#8B4513' }}>
+            Live Webinars
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join our expert-led webinars covering the latest developments in legal education and practice.
@@ -62,7 +46,7 @@ const Webinars = () => {
           {webinars.map((webinar) => (
             <Card key={webinar.id} className="shadow-card overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-start mb-4">
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     webinar.status === 'upcoming' 
                       ? 'bg-primary/20 text-primary' 
@@ -70,10 +54,6 @@ const Webinars = () => {
                   }`}>
                     {webinar.status === 'upcoming' ? 'Upcoming' : 'Completed'}
                   </span>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Users className="w-4 h-4 mr-1" />
-                    {webinar.attendees}
-                  </div>
                 </div>
 
                 <h3 className="text-xl font-bold mb-3 text-foreground">
@@ -88,10 +68,6 @@ const Webinars = () => {
                   <div className="flex items-center text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 mr-2 text-primary" />
                     {webinar.date}
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Clock className="w-4 h-4 mr-2 text-primary" />
-                    {webinar.time} • {webinar.duration}
                   </div>
                 </div>
 
