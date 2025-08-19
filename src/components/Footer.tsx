@@ -55,15 +55,11 @@ const Footer = () => {
             <div className="mt-8">
               <h3 className="font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <Facebook className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <Linkedin className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <Instagram className="w-4 h-4" />
-                </Button>
+                <div className="p-1 rounded-full" style={{ backgroundColor: '#ffe4c4' }}>
+                  <Button variant="ghost" size="icon" className="text-black hover:text-black hover:bg-transparent focus:bg-transparent active:bg-transparent">
+                    <Linkedin className="w-2 h-2" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
