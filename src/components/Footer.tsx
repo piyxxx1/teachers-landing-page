@@ -123,9 +123,9 @@ const Footer = () => {
 
               <div className="bg-accent p-6 rounded-lg border-0">
                 <h4 className="font-semibold text-accent-foreground mb-3">Ready to Start?</h4>
-                <p className="text-sm text-accent-foreground/80 mb-4 font-bold">
-                  Begin your legal journey today—transform ambition into action.
-                </p>
+                                 <p className="text-base text-accent-foreground/80 mb-4 font-bold">
+                   Begin your legal journey today—transform ambition into action.
+                 </p>
                 <Button 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={() => scrollToSection('courses')}

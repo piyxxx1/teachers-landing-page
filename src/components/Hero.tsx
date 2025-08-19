@@ -15,7 +15,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/2b76a1dd-7abe-4465-ba29-d5660cc0d79c.png" 
             alt="JLT Academy Logo" 
-            className="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-hero object-cover"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-hero object-cover"
           />
         </div>
         
@@ -54,10 +54,9 @@ const Hero = () => {
           </button>
           <a 
             href="tel:+917248926070"
-            className="nav-link flex items-center space-x-2 bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-2 rounded-lg transition-all duration-300"
+            className="nav-link bg-primary hover:bg-primary/90 text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
           >
             <Phone className="w-4 h-4" />
-            <span className="hidden md:block">+91 724 892 6070</span>
           </a>
         </div>
       </nav>
@@ -84,7 +83,7 @@ const Hero = () => {
               <div className="text-lg md:text-xl text-primary font-semibold mb-4">BCOM, MCOM, LLB</div>
               
               <p className="text-gray-300 max-w-lg leading-relaxed">
-                Guiding law aspirants with the right strategy, clear concepts, and confidence to thrive in the legal field.
+                Guiding Law and Judiciary aspirants with the right strategy, clear concepts, and confidence to thrive in the legal field.
               </p>
             </div>
           </div>
