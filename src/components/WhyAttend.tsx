@@ -29,8 +29,8 @@ const WhyAttend = () => {
     <section className="py-16 bg-accent/50">
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Attend Our <span className="gradient-gold bg-clip-text text-transparent">Sessions?</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-black leading-tight">
+            Why Attend Our Sessions?
           </h2>
         </div>
 

@@ -43,10 +43,10 @@ const Courses = () => {
     <section id="courses" className="py-20 bg-background">
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="gradient-gold bg-clip-text text-transparent">Live Interactive Masterclass</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-amber-900">
+            Our Live Interactive Masterclass
           </h2>
-          <p className="text-3xl font-bold text-center max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-center max-w-4xl mx-auto leading-relaxed">
             Strengthen your legal foundation and prepare for competitive exams with expert-led live sessions. From preparation to profession—step into your legal journey today
           </p>
         </div>
@@ -87,12 +87,8 @@ const Courses = () => {
                   </div>
                 )}
 
-                <div className="flex items-center justify-between pt-4 border-t border-border">
-                  <div className="flex items-center space-x-2">
-                    <BookOpen className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-muted-foreground">Expert Instruction</span>
-                  </div>
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <div className="flex items-center justify-center pt-4 border-t border-border">
+                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
                     Learn More
                   </Button>
                 </div>

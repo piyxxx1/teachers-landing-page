@@ -73,7 +73,7 @@ const Hero = () => {
 
             {/* Educator Info */}
             <div className="text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Lead Educator</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Adv. Sonu Sharma</h2>
               <div className="text-lg md:text-xl text-primary font-semibold mb-4">BCOM, MCOM, LLB</div>
               
               <p className="text-gray-300 max-w-lg leading-relaxed">
@@ -96,9 +96,8 @@ const Hero = () => {
             </Button>
             <Button 
               onClick={() => scrollToSection('about')}
-              variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              className="bg-white hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
             >
               Learn More
             </Button>
