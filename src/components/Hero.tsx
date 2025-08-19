@@ -76,13 +76,6 @@ const Hero = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Lead Educator</h2>
               <div className="text-lg md:text-xl text-primary font-semibold mb-4">BCOM, MCOM, LLB</div>
               
-              <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
-                <div className="bg-primary/20 backdrop-blur-sm rounded-lg px-4 py-2 border border-primary/30">
-                  <div className="text-2xl md:text-3xl font-bold text-primary">15+</div>
-                  <div className="text-sm text-gray-300">Years Experience</div>
-                </div>
-              </div>
-
               <p className="text-gray-300 max-w-lg leading-relaxed">
                 Guiding law aspirants with the right strategy, clear concepts, and confidence to thrive in the legal field.
               </p>
@@ -112,30 +105,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
-          <div className="text-center">
-            <div className="flex justify-center mb-3">
-              <Award className="w-8 h-8 text-primary" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-2">15+</div>
-            <div className="text-gray-300">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center mb-3">
-              <Users className="w-8 h-8 text-primary" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-2">1000+</div>
-            <div className="text-gray-300">Students Trained</div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center mb-3">
-              <BookOpen className="w-8 h-8 text-primary" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-2">10+</div>
-            <div className="text-gray-300">Expert Live Interactive Masterclass</div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

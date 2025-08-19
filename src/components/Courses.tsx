@@ -46,8 +46,8 @@ const Courses = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our <span className="gradient-gold bg-clip-text text-transparent">Live Interactive Masterclass</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive legal education programs designed to excel in competitive examinations and professional practice.
+          <p className="text-3xl font-bold text-center max-w-4xl mx-auto leading-relaxed">
+            Strengthen your legal foundation and prepare for competitive exams with expert-led live sessions. From preparation to profession—step into your legal journey today
           </p>
         </div>
 

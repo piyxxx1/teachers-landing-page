@@ -1,4 +1,4 @@
-import { CheckCircle, Target, UserCheck } from "lucide-react";
+import { CheckCircle, Target, UserCheck, ClipboardCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
@@ -16,6 +16,11 @@ const features = [
     icon: UserCheck,
     title: "Expert Guidance",
     description: "Learn directly from a practicing advocate & mentor."
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Evaluation & Personalized Feedback",
+    description: "Regular assignments, mock tests, and expert feedback help you monitor progress, improve performance, and gain confidence for exams."
   }
 ];
 
@@ -29,7 +34,7 @@ const WhyAttend = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <Card key={index} className="book-card p-6 text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">

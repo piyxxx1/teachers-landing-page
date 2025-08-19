@@ -51,7 +51,7 @@ const Webinars = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Live <span className="gradient-gold bg-clip-text text-transparent">Webinars</span>
+            Live <span style={{ color: '#8B4513' }}>Webinars</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join our expert-led webinars covering the latest developments in legal education and practice.

@@ -52,34 +52,11 @@ const About = () => {
               About <span className="gradient-gold bg-clip-text text-transparent">JLT Academy</span>
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              JLT Academy is a premier legal education institution dedicated to empowering the next generation 
-              of legal professionals. With over 15 years of expertise in legal education and competitive 
-              examination preparation, we provide comprehensive training in all aspects of legal practice.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 max-w-2xl mx-auto">
-              <div className="flex items-center justify-center space-x-3">
-                <Award className="w-6 h-6 text-primary" />
-                <div>
-                  <div className="font-semibold text-foreground">15+ Years</div>
-                  <div className="text-sm text-muted-foreground">Experience</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <Users className="w-6 h-6 text-primary" />
-                <div>
-                  <div className="font-semibold text-foreground">1000+ Students</div>
-                  <div className="text-sm text-muted-foreground">Successfully Trained</div>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Our academy specializes in bar examination preparation, legal drafting, judicial training, 
-              and comprehensive coverage of the new Indian legal system including Bharatiya Nyaya Sanhita, 
-              Bharatiya Nagarik Suraksha Sanhita, and Bharatiya Sakshya Adhiniyam.
-            </p>
+                                      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+               JLT Academy is a premier legal education institution dedicated to empowering the next generation 
+               of legal professionals. With over 15 years of expertise in legal education and competitive 
+               examination preparation, we provide comprehensive training in all aspects of legal practice.
+             </p>
           </div>
         </div>
 
@@ -153,7 +130,7 @@ const About = () => {
                 </div>
 
                 <Button type="submit" className="w-full">
-                  Register Now
+                  Submit
                 </Button>
               </form>
             </Card>
