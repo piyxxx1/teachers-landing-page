@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 
 const MiniSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -36,7 +37,15 @@ const MiniSlider = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  const handleVideoPlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsVideoPlaying(true);
+    }
+  };
+
   const handleVideoEnd = () => {
+    setIsVideoPlaying(false);
     nextSlide();
   };
 
@@ -66,12 +75,17 @@ const MiniSlider = () => {
        };
      }
 
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-         };
+         return () => {
+       if (intervalRef.current) {
+         clearInterval(intervalRef.current);
+         intervalRef.current = null;
+       }
+     };
+
+     // Reset video playing state when slide changes
+     if (currentSlideData.type === "image") {
+       setIsVideoPlaying(false);
+     }
 
 
    }, [currentSlide]);
@@ -96,16 +110,27 @@ const MiniSlider = () => {
                        alt={slide.alt}
                        className="w-full h-full object-contain"
                      />
-                   ) : (
-                     <video
-                       ref={videoRef}
-                       src={slide.src}
-                       className="w-full h-full object-contain"
-                       autoPlay
-                       muted
-                       playsInline
-                     />
-                   )}
+                                       ) : (
+                      <div className="relative w-full h-full">
+                        <video
+                          ref={videoRef}
+                          src={slide.src}
+                          className="w-full h-full object-contain"
+                          muted
+                          playsInline
+                        />
+                        {!isVideoPlaying && (
+                          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                            <button
+                              onClick={handleVideoPlay}
+                              className="bg-white/90 hover:bg-white text-black p-4 rounded-full transition-all duration-300 hover:scale-110"
+                            >
+                              <Play className="w-8 h-8 ml-1" />
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    )}
                 </div>
               ))}
             </div>
