@@ -7,9 +7,7 @@ const courses = [
     id: 1,
     title: "All India Bar Examination (AIBE)",
     description: "From law graduate to practicing advocate – AIBE is the bridge, we help you cross it",
-    icon: Scale,
-    duration: "3 Months",
-    level: "Professional"
+    icon: Scale
   },
   {
     id: 2,

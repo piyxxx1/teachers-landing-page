@@ -54,8 +54,7 @@ const About = () => {
             
                                       <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                JLT Academy is a premier legal education institution dedicated to empowering the next generation 
-               of legal professionals. With over 15 years of expertise in legal education and competitive 
-               examination preparation, we provide comprehensive training in all aspects of legal practice.
+               of legal professionals.  we provide comprehensive training in all aspects of legal practice.
              </p>
           </div>
 
