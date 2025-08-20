@@ -58,6 +58,28 @@ const About = () => {
                examination preparation, we provide comprehensive training in all aspects of legal practice.
              </p>
           </div>
+
+          {/* Vision Section */}
+          <div className="text-center mb-16">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black leading-tight">
+              Vision
+            </h3>
+            
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              To create a generation of well-prepared, ethical, and confident legal professionals who can excel in competitive exams and thrive in the practice of law.
+            </p>
+          </div>
+
+          {/* Mission Section */}
+          <div className="text-center mb-16">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black leading-tight">
+              Mission
+            </h3>
+            
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              To empower law aspirants with practical skills, clarity in law, and expert mentorship, ensuring they excel in exams and enter the legal profession with confidence, competence, and integrity. Our mission is to bridge the gap between legal education and legal practice through practical training and mentorship.
+            </p>
+          </div>
         </div>
 
         {/* Registration Form */}

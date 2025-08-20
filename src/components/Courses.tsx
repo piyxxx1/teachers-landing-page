@@ -28,6 +28,14 @@ const courses = [
   },
   {
     id: 4,
+    title: "Judiciary Masterclass",
+    description: "Our Judiciary Masterclass is packed with strategies, past paper discussions, judgment writing practice, and concept clarity sessions. Designed to give aspirants an edge in cracking the Judicial Services Exams.",
+    icon: BookOpen,
+    duration: "6 Months",
+    level: "Advanced"
+  },
+  {
+    id: 5,
     title: "Combo Masterclass",
     description: "Complete coverage of Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA).",
     icon: Users,

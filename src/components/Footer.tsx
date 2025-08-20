@@ -154,7 +154,13 @@ const Footer = () => {
                  © 2024 JLT Academy. All rights reserved.
                </p>
                <p className="text-secondary-foreground/60 text-sm">
-                 Empowering Legal Minds
+                 Empowering Legal Minds.
+               </p>
+               <p className="text-secondary-foreground/60 text-sm">
+                 The text, design, and material presented here are the sole creation of JLT Academy.
+               </p>
+               <p className="text-secondary-foreground/60 text-sm">
+                 Any unauthorized copying or reproduction is not permitted.
                </p>
                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 justify-center md:justify-end">
                  <a 
