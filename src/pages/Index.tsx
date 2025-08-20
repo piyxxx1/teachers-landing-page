@@ -6,6 +6,7 @@ import Webinars from "@/components/Webinars";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import AdminLink from "@/components/AdminLink";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <About />
       <Footer />
       <WhatsAppButton />
+      <AdminLink />
     </div>
   );
 };

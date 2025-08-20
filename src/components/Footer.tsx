@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, Heart } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Youtube, Instagram } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -179,14 +179,7 @@ const Footer = () => {
              </div>
           </div>
           
-          {/* Watermark */}
-          <div className="flex justify-center mt-6">
-            <div className="flex items-center space-x-2 text-secondary-foreground/40 text-sm">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>by Qikk Space</span>
-            </div>
-          </div>
+          
         </div>
       </div>
     </footer>

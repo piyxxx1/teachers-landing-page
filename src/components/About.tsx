@@ -52,10 +52,15 @@ const About = () => {
               About JLT Academy
             </h2>
             
-                                      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-               JLT Academy is a premier legal education institution dedicated to empowering the next generation 
-               of legal professionals.  we provide comprehensive training in all aspects of legal practice.
-             </p>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              At the heart of the Academy is its founder—a renowned advocate with a strong background in legal practice. The Academy equips judiciary and law aspirants with practical knowledge and professional readiness for a rewarding legal career.
+            </p>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              Because here, learning is practical, engaging, and tailored to your success. Under the guidance of an experienced advocate, every student is equipped not just to pass exams, but to become a competent legal professional ready for the responsibilities of the judiciary and legal practice.
+            </p>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              From Law Student to Confident Advocate – Practical Skills, Expert Mentorship, and Real-World-Focused Training for a Thriving Legal Career.
+            </p>
           </div>
 
           {/* Vision Section */}
@@ -65,7 +70,7 @@ const About = () => {
             </h3>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              To create a generation of well-prepared, ethical, and confident legal professionals who can excel in competitive exams and thrive in the practice of law.
+              To create a generation of well-prepared and confident legal professionals who can excel in competitive exams and thrive in the practice of law.
             </p>
           </div>
 

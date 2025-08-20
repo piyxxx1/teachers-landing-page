@@ -1,22 +1,14 @@
-# Welcome to your Lovable project
+# JLT Academy Website
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/87e7715b-6ce2-4fdc-999f-4753f83bba04
+JLT Academy is a premier legal education institution dedicated to empowering the next generation of legal professionals. This website showcases our comprehensive training programs, live interactive masterclasses, and webinars.
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/87e7715b-6ce2-4fdc-999f-4753f83bba04) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -60,14 +52,21 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Features
 
-Simply open [Lovable](https://lovable.dev/projects/87e7715b-6ce2-4fdc-999f-4753f83bba04) and click on Share -> Publish.
+- **Hero Section:** Main landing area with navigation and lead educator profile
+- **Mini Slider:** Showcase of academy content with images and videos
+- **Live Interactive Masterclass:** Course offerings and registration
+- **Why Attend Section:** Benefits and specialties of JLT Academy
+- **Live Webinars:** Upcoming and recorded webinars
+- **About Section:** Vision, mission, and contact form
+- **Footer:** Contact information, quick links, and social media
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project can be deployed to any static hosting service like:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3
+- Firebase Hosting
