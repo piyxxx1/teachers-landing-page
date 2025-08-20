@@ -5,13 +5,21 @@ import { BookOpen, Scale, FileText, Users } from "lucide-react";
 const courses = [
   {
     id: 1,
+    title: "All India Bar Examination (AIBE)",
+    description: "From law graduate to practicing advocate – AIBE is the bridge, we help you cross it",
+    icon: Scale,
+    duration: "3 Months",
+    level: "Professional"
+  },
+  {
+    id: 2,
     title: "Legal Drafting",
     description: "Master the art of legal document preparation, contracts, and professional legal writing.",
     icon: FileText,
     duration: "2 Months"
   },
   {
-    id: 2,
+    id: 3,
     title: "Judgement Writing",
     description: "Develop skills in judicial decision writing, legal reasoning, and case analysis.",
     icon: BookOpen,
@@ -19,7 +27,7 @@ const courses = [
     level: "Advanced"
   },
   {
-    id: 3,
+    id: 4,
     title: "Combo Masterclass",
     description: "Complete coverage of Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA).",
     icon: Users,
@@ -79,9 +87,15 @@ const Courses = () => {
                 )}
 
                 <div className="flex items-center justify-center pt-4 border-t border-border">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
-                    Learn More
-                  </Button>
+                  <a 
+                    href="https://forms.office.com/pages/responsepage.aspx?id=-m_t40LQXkKOX_MUbtltZBWEL52EmyhPjY4p8NtMoEBUNVdaTVVGMlVFWjdIUjQ1R01HWE5VQUxZUS4u&route=shorturl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
+                      Learn More
+                    </Button>
+                  </a>
                 </div>
               </div>
             </Card>

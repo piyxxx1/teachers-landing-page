@@ -71,25 +71,37 @@ const Webinars = () => {
                   </div>
                 </div>
 
-                <Button 
-                  className={`w-full ${
-                    webinar.status === 'upcoming'
-                      ? 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                      : 'bg-secondary hover:bg-secondary/90 text-secondary-foreground'
-                  }`}
+                <a 
+                  href="https://forms.office.com/pages/responsepage.aspx?id=-m_t40LQXkKOX_MUbtltZBWEL52EmyhPjY4p8NtMoEBUNVdaTVVGMlVFWjdIUjQ1R01HWE5VQUxZUS4u&route=shorturl"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Play className="w-4 h-4 mr-2" />
-                  {webinar.status === 'upcoming' ? 'Register Now' : 'Watch Recording'}
-                </Button>
+                  <Button 
+                    className={`w-full ${
+                      webinar.status === 'upcoming'
+                        ? 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                        : 'bg-secondary hover:bg-secondary/90 text-secondary-foreground'
+                    }`}
+                  >
+                    <Play className="w-4 h-4 mr-2" />
+                    {webinar.status === 'upcoming' ? 'Register Now' : 'Watch Recording'}
+                  </Button>
+                </a>
               </div>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            View All Webinars
-          </Button>
+          <a 
+            href="https://forms.office.com/pages/responsepage.aspx?id=-m_t40LQXkKOX_MUbtltZBWEL52EmyhPjY4p8NtMoEBUNVdaTVVGMlVFWjdIUjQ1R01HWE5VQUxZUS4u&route=shorturl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              View All Webinars
+            </Button>
+          </a>
         </div>
       </div>
     </section>

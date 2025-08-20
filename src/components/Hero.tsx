@@ -15,14 +15,14 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/2b76a1dd-7abe-4465-ba29-d5660cc0d79c.png" 
             alt="JLT Academy Logo" 
-            className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-hero object-cover"
+            className="w-20 h-20 md:w-24 md:h-24 rounded-full shadow-hero object-cover"
           />
         </div>
         
-        <div className="flex items-center space-x-6 md:space-x-8">
+        <div className="flex items-center space-x-4 md:space-x-6 lg:space-x-8">
           <button 
             onClick={() => scrollToSection('home')} 
-            className="nav-link hidden md:block"
+            className="nav-link hidden lg:block"
           >
             Home
           </button>
@@ -31,24 +31,24 @@ const Hero = () => {
             className="nav-link flex items-center space-x-2"
           >
             <BookOpen className="w-4 h-4" />
-            <span className="hidden md:block">Live Interactive Masterclass</span>
+            <span className="hidden sm:block">Live Interactive Masterclass</span>
           </button>
           <button 
             onClick={() => scrollToSection('webinars')} 
             className="nav-link flex items-center space-x-2"
           >
             <Video className="w-4 h-4" />
-            <span className="hidden md:block">Webinars</span>
+            <span className="hidden sm:block">Webinars</span>
           </button>
           <button 
             onClick={() => scrollToSection('about')} 
-            className="nav-link hidden md:block"
+            className="nav-link hidden lg:block"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
-            className="nav-link hidden md:block"
+            className="nav-link hidden lg:block"
           >
             Contact
           </button>

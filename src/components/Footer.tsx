@@ -149,14 +149,28 @@ const Footer = () => {
               <span className="text-xl font-bold">JLT Academy</span>
             </div>
             
-            <div className="text-center md:text-right">
-              <p className="text-secondary-foreground/60 text-sm">
-                © 2024 JLT Academy. All rights reserved.
-              </p>
-              <p className="text-secondary-foreground/60 text-sm">
-                Empowering Legal Minds
-              </p>
-            </div>
+                         <div className="text-center md:text-right">
+               <p className="text-secondary-foreground/60 text-sm">
+                 © 2024 JLT Academy. All rights reserved.
+               </p>
+               <p className="text-secondary-foreground/60 text-sm">
+                 Empowering Legal Minds
+               </p>
+               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 justify-center md:justify-end">
+                 <a 
+                   href="/terms" 
+                   className="text-secondary-foreground/60 text-sm hover:text-primary transition-colors"
+                 >
+                   Terms & Conditions
+                 </a>
+                 <a 
+                   href="/privacy" 
+                   className="text-secondary-foreground/60 text-sm hover:text-primary transition-colors"
+                 >
+                   Privacy Policy
+                 </a>
+               </div>
+             </div>
           </div>
           
           {/* Watermark */}
