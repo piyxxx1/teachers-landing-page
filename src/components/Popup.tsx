@@ -58,21 +58,13 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose }) => {
           <img
             src="/lovable-uploads/popup/Workshop-Legal-Writing-Side-1.png"
             alt="Legal Writing Workshop"
-            className="w-full h-32 sm:h-48 object-cover"
+            className="w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
         </div>
 
         {/* Content */}
         <div className="p-4 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-center mb-3 sm:mb-4 text-amber-900">
-            Legal Writing Workshop
-          </h2>
-          
-          <p className="text-sm sm:text-base text-gray-600 text-center mb-4 sm:mb-6">
-            Master the art of legal writing with our exclusive workshop. Limited seats available!
-          </p>
-
           {/* Timer */}
           <div className="bg-amber-50 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
