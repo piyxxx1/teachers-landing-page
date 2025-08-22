@@ -95,7 +95,8 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose }) => {
           {/* Action Buttons */}
           <div className="space-y-2 sm:space-y-3">
             <Button 
-              className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 sm:py-3 text-sm sm:text-base"
+              className="w-full text-black font-semibold py-2.5 sm:py-3 text-sm sm:text-base"
+              style={{ backgroundColor: '#ffe4c4' }}
               onClick={() => {
                 window.open('https://forms.office.com/pages/responsepage.aspx?id=-m_t40LQXkKOX_MUbtltZBWEL52EmyhPjY4p8NtMoEBUNVdaTVVGMlVFWjdIUjQ1R01HWE5VQUxZUS4u&route=shorturl', '_blank');
               }}
